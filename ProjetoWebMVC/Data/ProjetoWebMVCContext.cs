@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ProjetoWebMVC.Models;
 
-namespace ProjetoWebMVC.Data
+namespace ProjetoWebMVC.Models
 {
     public class ProjetoWebMVCContext : DbContext
     {
@@ -14,6 +14,9 @@ namespace ProjetoWebMVC.Data
         {
         }
 
-        public DbSet<ProjetoWebMVC.Models.Departamento> Departamento { get; set; }
+        public DbSet<Departamento> Departamento { get; set; }
+        public DbSet<Vendedor> Vendedor { get; set; }
+        public DbSet<RegistroVendas> RegistroVendas { get; set; }
+        
     }
 }

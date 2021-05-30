@@ -10,7 +10,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using ProjetoWebMVC.Data;
+using ProjetoWebMVC;
+using ProjetoWebMVC.Models;
 
 namespace ProjetoWebMVC
 {
