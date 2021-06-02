@@ -11,14 +11,14 @@ namespace ProjetoWebMVC.Models
         public DateTime Data { get; set; }
         public double  Resultar{ get; set; }
         public StatusVendas Status { get; set; }
-        public Vendedor Vendedor { get; set; }
+        public Vendedores Vendedor { get; set; }
 
         public RegistroVendas()
         {
 
         }
 
-        public RegistroVendas(int id, DateTime data, double resultar, StatusVendas status, Vendedor vendedor)
+        public RegistroVendas(int id, DateTime data, double resultar, StatusVendas status, Vendedores vendedor)
         {
             Id = id;
             Data = data;

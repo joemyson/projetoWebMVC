@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoWebMVC.Models
 {
-    public class Vendedor
+    public class Vendedores
     {
        
 
@@ -17,12 +17,12 @@ namespace ProjetoWebMVC.Models
         public Departamento Departamento { get; set; }//ASSOCIAÇÃO DE  VENDEDOR COM  DEPARTAMENTO
         public ICollection<RegistroVendas> Vendas { get; set; } = new List<RegistroVendas>();// ASSOCIAÇÃO DE VENDEDOR COM REGISTRO DE VENDAS
 
-        public Vendedor()
+        public Vendedores()
         {
 
         }
 
-        public Vendedor(int id, string nome, string email, DateTime dataNasc, double salarioBase, Departamento departamento)
+        public Vendedores(int id, string nome, string email, DateTime dataNasc, double salarioBase, Departamento departamento)
         {
             Id = id;
             Nome = nome;

@@ -10,7 +10,7 @@ namespace ProjetoWebMVC.Models
     {
         public int Id { get; set; }
         public String Nome { get; set; }
-        public ICollection<Vendedor> Vendedores { get; set; } = new List<Vendedor>();//ASSOCIAÇÃO DE DEPARTAMENTO COM VENDEDOR
+        public ICollection<Vendedores> Vendedores { get; set; } = new List<Vendedores>();//ASSOCIAÇÃO DE DEPARTAMENTO COM VENDEDOR
 
         public Departamento()
         {
@@ -22,7 +22,7 @@ namespace ProjetoWebMVC.Models
             Id = id;
             Nome = nome;
         }
-        public void AdicionarVendedor(Vendedor vendedor)
+        public void AdicionarVendedor(Vendedores vendedor)
         {
             Vendedores.Add(vendedor);
         }
